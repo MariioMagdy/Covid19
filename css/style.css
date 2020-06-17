@@ -376,11 +376,19 @@ footer a {
 
     
 }
+
+.social-i i:hover{
+    background-color:white !important ;   
+    color:#3a0877 ;
+    box-shadow:0 0 10px 1px  #3a0877 ;
+}
 .social-i i{
     background-color:#3a0877 ;
     padding: 10px;
     width: 40px;
     border-radius: 25px;
+    transition: .5s;
+    margin: 3px;
 }
 
 .we-care{
