@@ -104,6 +104,8 @@ a{
     overflow: hidden;
     
 }
+
+
 .video{
     position: absolute;
     right: -40%;
@@ -112,8 +114,8 @@ a{
 
 }
 
-.caption{
-
+.hea{
+height: 500px;
    
 }
 
@@ -200,6 +202,11 @@ h3{
     border-bottom-right-radius: 105px;
 }
 
+.c{
+    color: white ;
+}
+
+
 .protect-yourself .col-md-6.padding{
     padding: 0 !important;
 }
@@ -256,11 +263,6 @@ h3{
 }
 
 
-.vite{
-    background-color: red;
-    width: 400px;
-    height: 400px;
-}
 /* 
 
 
@@ -318,7 +320,7 @@ h3{
 .covid19-d{
     
     position: absolute;
-    width: 278px;
+    width: 24%;
     top:-323px;
     right:13px;
  
@@ -391,9 +393,7 @@ footer a {
     margin: 3px;
 }
 
-.we-care{
-    width: 800px;
-}
+
 svg{
    transition: .5s; 
 }
@@ -424,6 +424,24 @@ transform: scale(1.1);
     color:#8c43e6
 }
 
+@media (max-width: 568px){
+    .video-box{
+        display: none;
+    }
+    .hea {
+        height: 700px;
+           
+        }
+        
+}
+
+@media (max-width: 990px){
+    .caption-span{
+        width: 100px !important;
+        display: inline-block
+    }
+}
+
 @media (max-width: 991px) {
     .ss a{
         color:#8C43E6 !important;
@@ -436,7 +454,7 @@ transform: scale(1.1);
  
      }
        ul{
-           background-image: linear-gradient(to right, white , #c5afe000);;
+           background-image: linear-gradient(to right, rgb(255, 255, 255) , #c5afe000);;
            padding: 20px;
            width: 100% !important;
            border-radius: 2px !important;

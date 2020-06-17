@@ -39,3 +39,18 @@ $('.nonloop').owlCarousel({
 
     }
 });
+
+var off = $(".navc").offset().top;
+console.log(off)
+
+$(window).scroll(function () {
+    var x = $(window).scrollTop();
+    if (x > off) {
+        $(".navbar").css({ backgroundColor: '#3a0877', transition: ".5s" })
+        $(".c").css({ color: "#fff", transition: ".5s" })
+    }
+    else {
+        $(".navbar").css("backgroundColor", "transparent")
+        $(".c").css({ color: "#fff" })
+    }
+})
