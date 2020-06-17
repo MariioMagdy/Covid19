@@ -42,6 +42,9 @@ a{
     color:white;
     text-decoration: none !important;
 }
+.navbar-nav a{
+    color:white !important;
+}
 .sign-inB{
     border-radius: 7px;
     min-width: 120px;
