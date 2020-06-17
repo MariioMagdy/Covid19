@@ -26,19 +26,46 @@ $(document).ready(function () {
 })
 
 
-$('.nonloop').owlCarousel({
-    center: true,
-    items: 2,
-    loop: false,
-    margin: 25,
+// $('.loop').owlCarousel({
+//     center: true,
+//     items: 2,
+//     loop: true,
+//     margin: 10,
+//     responsive: {
+//         600: {
+//             items: 4
+//         }
+//     }
+// });
 
+
+
+$('.owl-carousel').owlCarousel({
+    stagePadding: 50,
+    loop: true,
+    margin: 10,
     responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+
         600: {
             items: 2
+        },
+        700: {
+            items: 2
+        },
+        900: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
-
     }
-});
+})
 
 var off = $(".navc").offset().top;
 console.log(off)
@@ -59,4 +86,13 @@ $(document).ready(function () {
     $("#loading").fadeOut(2000, function () {
         $("body").css("overflow", "auto")
     })
+})
+
+$(".home-nav").click(function () {
+    var currentHref = $(this).attr("href");
+    var currentOffset = $(currentHref).offset().top
+    $("html, body").animate({ scrollTop: currentOffset }, 1000)
+})
+$(".top").click(function () {
+    $("body,html").animate({ scrollTop: 0 }, 2000)
 })
