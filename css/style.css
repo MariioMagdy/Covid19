@@ -6,6 +6,7 @@
 
 }
 
+
 /*** below scrollbar code working on chrome only **/
 body::-webkit-scrollbar{
     width: 12px;
@@ -21,6 +22,21 @@ body::-webkit-scrollbar-thumb {
 html {scrollbar-color: #3a0877 black;
     scroll-behavior: smooth;} 
 
+body{
+    overflow: hidden;
+}
+#loading {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #15002e;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 a{
     color:white;

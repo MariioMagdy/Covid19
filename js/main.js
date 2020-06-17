@@ -54,3 +54,9 @@ $(window).scroll(function () {
         $(".c").css({ color: "#fff" })
     }
 })
+
+$(document).ready(function () {
+    $("#loading").fadeOut(2000, function () {
+        $("body").css("overflow", "auto")
+    })
+})
