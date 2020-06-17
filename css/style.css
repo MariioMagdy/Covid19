@@ -451,6 +451,16 @@ transform: scale(1.1);
         
 }
 
+@media (max-width: 766px){
+    .blogBox .text{
+        font-size: 1.5rem !important;
+    }
+    .blogBox h6{
+        font-size: 1.5rem !important; 
+    }
+}
+
+
 @media (max-width: 990px){
     .caption-span{
         width: 100px !important;
@@ -504,4 +514,5 @@ transform: scale(1.1);
     .blogBox .text{
         font-size: .8rem;
     }
+    
   }
