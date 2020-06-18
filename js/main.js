@@ -68,7 +68,6 @@ $('.owl-carousel').owlCarousel({
 })
 
 var off = $(".navc").offset().top;
-console.log(off)
 
 $(window).scroll(function () {
     var x = $(window).scrollTop();
@@ -91,8 +90,8 @@ $(document).ready(function () {
 $(".home-nav").click(function () {
     var currentHref = $(this).attr("href");
     var currentOffset = $(currentHref).offset().top
-    $("html, body").animate({ scrollTop: currentOffset }, 1000)
+    $("html, body").animate({ scrollTop: currentOffset }, 500)
 })
 $(".top").click(function () {
-    $("body,html").animate({ scrollTop: 0 }, 2000)
+    $("body,html").animate({ scrollTop: 0 }, 1000)
 })
