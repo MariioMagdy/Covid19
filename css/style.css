@@ -291,7 +291,6 @@ h3{
 
 
 
-
 /* 
 
 
@@ -548,6 +547,9 @@ footer{
   @media (max-width: 1199px) {
     .blogBox .text{
         font-size: .8rem;
+    }
+    .adjust-h{
+        padding-bottom: 3rem !important;
     }
     
   }
