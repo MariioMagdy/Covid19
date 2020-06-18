@@ -134,7 +134,7 @@ a{
 }
 
 .hea{
-height: 500px;
+height: 80vh;
    
 }
 
@@ -465,9 +465,6 @@ footer{
     .video-box{
         display: none;
     }
-    .hea {
-        height: 700px;  
-        }
         .social-i{
             text-align: center;
         }
